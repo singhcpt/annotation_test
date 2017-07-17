@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Adding Annotations</title>
+  
+    <link rel="stylesheet" href="https://s3.amazonaws.com/drone-deploy-plugins/templates/uikit/v1/styles.css">
+  </head>
+  <body>
+    <p>
+      <label>
+        Select a plan outline to draw <br / >
+        <select id="planSelect"></select>
+      </label>
+
+      <label>
+        Latitude:
+      </label>
+      <input id="latInput"></input>
+      
+      <label>
+        Longitude:
+      </label>
+      <input id="lngInput"></input>
+    </p>
+
+    <button onclick="drawOutline()">
+      Create Annotation
+    </button>
+    <button onclick="clearAnnotations()">
+      Delete All Annotations 
+    </button>
+    <script src="script.js"></script>
+  </body>
+</html>
