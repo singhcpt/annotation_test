@@ -3,6 +3,7 @@ let planGeometry = {};
       var dd = new DroneDeploy({
         version: 1
       });
+      
 
       dd.then(function(api){
         let select = document.getElementById('planSelect');
